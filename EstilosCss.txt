@@ -1,0 +1,48 @@
+Estilo del texto
+
+Veamos los parámetros disponibles para dar estilo al texto. Como ya sabes, las unidades de medida aplicables a todos ellos son varias, pero para mayor claridad, en todos los ejemplos utilizaremos solamente el píxel: px. Sea por ejemplo la siguiente página:
+
+<HTML>
+<HEAD><TITLE>Estilos</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="estilo.css">
+</HEAD>
+<BODY>
+
+Texto fuera de párrafo.<BR>
+Segunda línea fuera de párrafo.
+
+<P>texto de párrafo. <BR> segunda línea de párrafo.</P>
+
+</BODY>
+</HTML>
+
+Y si escribimos la siguiente hoja de estilo estilo.css:
+
+BODY {color:green }
+
+P {color:red; 
+   font-size:20px;
+   font-family:Courier;
+   font-weight:bold;
+   font-style:italic;
+   line-height:30px;
+   letter-spacing:5px;
+   text-decoration:underline;
+   text-transform:capitalize;
+   text-align:left;
+   text-indent:30px;
+  }
+Se obtiene:
+Texto fuera de párrafo.
+Segunda línea fuera de párrafo.
+
+Texto De Párrafo. 
+Segunda Línea De Párrafo
+
+Fíjate en la gran diferencia de estilo que hay entre las dos primeras líneas y las dos siguientes. Analicemos cómo funciona: Las dos primeras líneas de texto, en color verde, tienen todos sus valores por defecto, excepto el color que lo reciben de la etiqueta BODY definida en la css. Las dos siguientes, en rojo, reciben todas sus características de la etiqueta P, también definida en la css. Como puedes ver, hay una gran cantidad de atributos que actúan sobre el estilo de ese texto.
+color:red;    Este ya lo conocemos. Define el color del texto. El color deseado puede escribirse directamente, en inglés, o puede utilizarse el sistema RGB en hexadecimal. Por ejemplo, este mismo color rojo en RGB sería: #FF0000;     Ciertos valores, como el rojo, pueden escribirse de forma abreviada: #F00;     Otra forma de declarar el color es mediante la función rgb() que puede parametrizarse en decimal o en tantos por ciento. He aquí un ejemplo con las cuatro formas del color rojo:
+
+color: #ff0000 
+color: #f00 
+color: rgb(255,0,0) 
+color: rgb(100%, 0%, 0%) 

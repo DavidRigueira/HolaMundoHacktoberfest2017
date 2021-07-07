@@ -1,0 +1,27 @@
+package angel;
+
+import java.util.Scanner;
+
+public class CalcularArea {
+	public static void main(String[] arg) {
+		float base;
+		float altura;
+		float resultado;
+		Scanner lector = new Scanner(System.in);
+		
+		// Leer por teclado base
+		System.out.println("Inserta la base:");
+		base = lector.nextFloat();
+		
+		// Leer por teclado la altura
+		System.out.println("Inserta la altura:");
+		altura = lector.nextFloat();
+
+		// hacer el calculo
+		resultado = (base * altura) / 2;
+		// mostrar el resultado en pantalla
+		System.out.print("El area del triangulo es:");
+		System.out.println(resultado);
+		lector.close();
+	}
+}

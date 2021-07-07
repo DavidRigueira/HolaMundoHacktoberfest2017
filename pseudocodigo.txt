@@ -1,0 +1,4 @@
+inicio
+texto = "hola"
+mostrar por pantalla texto
+fin

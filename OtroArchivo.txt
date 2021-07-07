@@ -1,0 +1,9 @@
+Java Style Guide
+
+The intention of this guide is to provide a set of conventions that encourage good code. It is the distillation of many combined man-years of software engineering and Java development experience. While some suggestions are more strict than others, you should always practice good judgement.
+
+If following the guide causes unnecessary hoop-jumping or otherwise less-readable code, readability trumps the guide. However, if the more 'readable' variant comes with perils or pitfalls, readability may be sacrificed.
+
+In general, much of our style and conventions mirror the Code Conventions for the Java Programming Language and Google's Java Style Guide.
+
+[TOC]

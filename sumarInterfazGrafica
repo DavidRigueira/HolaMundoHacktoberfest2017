@@ -1,0 +1,106 @@
+package com.angel;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import java.awt.Color;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class Principal {
+
+	private JFrame frame;
+	private JTextField numero1;
+	private JTextField numero2;
+	private JLabel resultado;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Principal window = new Principal();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public Principal() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setResizable(false);
+		frame.setBounds(100, 100, 210, 214);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("N\u00FAmero1:");
+		lblNewLabel.setBounds(10, 11, 59, 14);
+		frame.getContentPane().add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("N\u00FAmero2:");
+		lblNewLabel_1.setBounds(10, 45, 59, 14);
+		frame.getContentPane().add(lblNewLabel_1);
+		
+		numero1 = new JTextField();
+		numero1.setBackground(new Color(173, 216, 230));
+		numero1.setBounds(79, 8, 86, 20);
+		frame.getContentPane().add(numero1);
+		numero1.setColumns(10);
+		
+		numero2 = new JTextField();
+		numero2.setBackground(new Color(173, 216, 230));
+		numero2.setBounds(79, 42, 86, 20);
+		frame.getContentPane().add(numero2);
+		numero2.setColumns(10);
+		
+		JButton sumar = new JButton("SUMAR");
+		sumar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				//Coger el valor de la caja1 (numero1)
+				String texto1 = numero1.getText();
+				//Coger el valor de la caja2 (numero2)
+				String texto2 = numero2.getText();
+				
+				try {
+					//Convertir el texto de la caja1 en un numero
+					int valor1 = Integer.parseInt(texto1);
+					//Convertir el texto de la caja2 en un numero
+					int valor2 = Integer.parseInt(texto2);
+					//sumar los 2 valores
+					int suma = valor1 + valor2;
+					// Rellenar en la etiqueta(resultado) el valor
+					resultado.setText(suma + "");
+				}catch(Exception ex) {
+					JOptionPane.showMessageDialog(frame, 
+							"Los valores no son correctos");
+					resultado.setText("ERROR!");
+				}
+				
+			}
+		});
+		sumar.setBounds(76, 85, 89, 23);
+		frame.getContentPane().add(sumar);
+		
+		resultado = new JLabel("0");
+		resultado.setBounds(79, 135, 46, 14);
+		frame.getContentPane().add(resultado);
+	}
+}

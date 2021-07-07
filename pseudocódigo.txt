@@ -1,0 +1,206 @@
+﻿PSEUDOCODIGO
+# Asignaciones
+a = 5 + 2
+a:= 5 + 2
+a <- + 2
+
+#instrucciones
+instruccion1
+instruccion2
+...
+instruccionN
+#condiciones SI
+si (<condicion>){
+	instrucciones
+}
+#condicion si en python
+if <condicion>: instrucciones
+
+#condicional si / entonces
+si <condicion> entonces
+#condicional si / sino en java
+if(<condicion>){
+	intrstrucciones
+	} else{
+	instruciones
+}
+#condicional si /sino python
+if <condicion>:
+	instrucciones:
+else: 
+	instrucciones
+#condicional si multiple pseudocodigo
+si <condicion> entonces
+instruccionjes
+sino si <condicion> entonces
+	instrucciones
+sino si <condicion> entonces
+	instrucciones
+si no entonces
+	instrucciones
+fin si
+#condicional si multiple java
+if (<condicion>){
+	instrucciones
+}else if (<condicion>){
+		instrucciones
+}else if (<condicion>){
+	instrucciones
+}else if (<condicion>){
+	instrucciones
+}else  
+	instrucciones
+}
+#condicional swhich pseudocodigo
+segun <variable> hacer
+	caso valor1;
+		instruciones
+	caso valor2;
+		instruciones
+	caso valor3;
+		instruciones
+	en otro caso;
+		instrucciones
+fin segun
+#condicional switch en java
+switch <variable>{
+	case x:
+		instrucciones;
+	break;
+	case y:
+		instrucciones;
+	break;
+	default:
+	instrucciones;
+	}
+# mientras en pseudocodigo
+repetir
+	instrucciones
+hasta que <condición>
+
+# repeteir en java
+do{
+	instrucciones
+}while(<condicion>);
+#bucle de repeticion for en pseudocodigo
+para i=1 hasta 6 con incremento 1 hacer
+		instrucciones
+fin para
+#bucle de repeticion for en java
+for(int i=1; i<=6; i++){
+		instrucciones
+}
+#arrays
+lista = "Angel", "Pepe", "Bea"
+
+#arrays pseudocodigo
+lista= "Angel", "Pepe" , "Bea"
+
+#arrays en java
+String[] lista =  new String []{ "Angel", "Pepe", "Bea" }
+
+
+MARKDOWN
+
+#Titulo 1 <h1>
+##Titulo 2 <h2>
+###Titulo 3 <h3>
+
+Titulo 1 subrayado
+
+==================
+
+Titulo 2 sin subrayar
+---------------------
+
+Italica: *hola* a _holta_
+Negrita: **hola** o __hola___
+Tachado: ~~
+
+Nota Alt+126 o AltGr+4
+para pintar la ~
+
+#Listas numeradas
+1. Despertarme
+2. Desayunar
+a. Ir a clase
+#Listas no numeradas
+
+* Manzana
+* Platano
+* pERA
+- Rapante
+- Pez espada
+- Pez gato
++ Ajos
++ Tomates
++ Lechugas
+
+#Listas anidadas
+1. Elemento 1
+2. Elemento 2
+ 	1. Sub elemento 1
+ 	2. Sub elemento 2
+* Sistemas operativos
+	*Linux
+	*Windows
+		*Win 10
+		*Win 95
+
+# Enlaces
+[ir a google]
+(http://www.google.es)
+
+Puedo hacer referencia a una dirección directamente http://www.xuta.es  en mi codigo.
+
+#Imagenes
+![Logotipo gatito]
+(https://icon-icons.com/icons2/365/PNG/256/kitten-icon_36975.png)
+
+![Logotipo gatito][logo]
+[logo]:https://www.mundogato.net/wp-content/uploads/gif-de-gatitos-tiernos.gif
+
+#highlighting de codigo
+```
+class Profesor{
+	public static void main(String[] args){
+	System.out.println("Hola");
+	}
+}
+```
+
+# Tablas
+| PROFESOR |   ALTURA   |    EDAD|
+|----------|------------|--------|
+|Pepe      |    180     |     42 |
+|Bea       |     183    |     43 |
+|Jesus     |    170     |     50 |
+
+| PROFESOR |   ALTURA   |    EDAD|
+|:---------|  :-----:   |-------:|
+|Pepe      |    180     |     42 |
+|Bea       |     183    |     43 |
+|Jesus     |    170     |     50 |
+
+
+# Blockquotes
+>El blockquote es una cita textual.
+>> Esto está dentro del blockquote
+
+# codigo html en linea
+
+<p style="text-align:center"> Esto es un parrafo </p>
+<a href="www.google.es">ir a google</a>
+```
+<p> Esto es un parrafo </p>
+```
+
+#lineas horizontales
+con asteriscos
+***
+con guiones bajos
+______-
+
+# Videos de youtube
+<a ref="https://www.youtube.com/watch?v=OgIRAjnnJzI">
+<img src="https://www.youtube.com/watch?v=OgIRAjnnJzI/0
